@@ -1,0 +1,143 @@
+/* ORION — Dashboard Page */
+.dashboard { max-width: 860px; }
+
+.page-loading {
+  display: flex; align-items: center; justify-content: center;
+  height: 40vh; color: var(--text-muted); font-size: 13px;
+  letter-spacing: 2px; text-transform: uppercase;
+}
+
+.dash-header {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  margin-bottom: 28px;
+}
+
+.dash-greeting {
+  font-size: 24px; font-weight: 600; color: var(--text-primary); margin-bottom: 4px;
+}
+
+.dash-subtext { font-size: 13px; color: var(--text-secondary); }
+
+.btn-start-session {
+  background: var(--accent-glow);
+  border: none; border-radius: var(--radius-md);
+  color: #fff; font-size: 13px; font-weight: 600;
+  padding: 10px 20px; transition: opacity 0.15s, transform 0.1s;
+}
+
+.btn-start-session:hover { opacity: 0.88; }
+.btn-start-session:active { transform: scale(0.97); }
+
+/* Stats */
+.stats-row {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 12px; margin-bottom: 24px;
+}
+
+.stat-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 18px 20px;
+}
+
+.stat-label {
+  font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px;
+  color: var(--text-muted); margin-bottom: 8px;
+}
+
+.stat-value {
+  font-family: var(--font-mono); font-size: 30px; font-weight: 700;
+  color: var(--text-primary); line-height: 1;
+}
+
+.stat-hint { font-size: 11px; color: var(--text-muted); margin-top: 5px; }
+
+/* Chart */
+.chart-card {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 20px 24px;
+  margin-bottom: 24px;
+}
+
+.card-title {
+  font-size: 12px; font-weight: 500; text-transform: uppercase;
+  letter-spacing: 2px; color: var(--text-muted); margin-bottom: 16px;
+}
+
+.chart-legend {
+  display: flex; gap: 18px; margin-top: 12px;
+}
+
+.legend-item {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 11px; color: var(--text-secondary);
+}
+
+.legend-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+}
+
+.chart-tooltip {
+  background: var(--bg-panel); border: 1px solid var(--border);
+  border-radius: var(--radius-md); padding: 10px 14px;
+  font-size: 12px;
+}
+
+.tooltip-label { color: var(--text-muted); margin-bottom: 6px; font-size: 11px; }
+
+.tooltip-row {
+  display: flex; justify-content: space-between; gap: 16px; margin-bottom: 3px;
+}
+
+/* Session list */
+.section-header { margin-bottom: 12px; }
+
+.session-list { display: flex; flex-direction: column; gap: 8px; }
+
+.session-row {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 14px 20px;
+  display: flex; align-items: center; gap: 16px;
+  transition: border-color 0.15s;
+}
+
+.session-row:hover { border-color: var(--border-average); }
+
+.session-meta { flex: 1; }
+
+.session-num {
+  font-size: 13px; font-weight: 500; color: var(--text-primary);
+  display: block; margin-bottom: 2px;
+}
+
+.session-date { font-size: 11px; color: var(--text-muted); }
+
+.session-scores { display: flex; align-items: center; gap: 8px; }
+
+.score-pill {
+  font-family: var(--font-mono); font-size: 14px; font-weight: 700;
+  border: 1px solid; border-radius: 20px; padding: 3px 12px;
+}
+
+.badge-pending {
+  font-size: 11px; color: var(--amber);
+  background: rgba(251,191,36,0.1); border: 1px solid rgba(251,191,36,0.25);
+  border-radius: 20px; padding: 3px 10px;
+}
+
+.btn-view-analysis {
+  font-size: 12px; color: var(--accent-light); font-weight: 500;
+  white-space: nowrap; transition: opacity 0.15s;
+}
+
+.btn-view-analysis:hover { opacity: 0.75; }
+
+/* Empty state */
+.empty-state {
+  text-align: center; padding: 60px 24px;
+  background: var(--bg-card); border: 1px dashed var(--border);
+  border-radius: var(--radius-xl);
+}
+
+.empty-icon { font-size: 32px; color: var(--text-muted); margin-bottom: 12px; }
+.empty-title { font-size: 16px; font-weight: 500; margin-bottom: 6px; }
+.empty-body { font-size: 13px; color: var(--text-secondary); margin-bottom: 20px; }

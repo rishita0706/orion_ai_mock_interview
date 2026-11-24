@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+
+# Environment variables
+.env
+
+# Model files
+*.joblib
+
+# Uploads / generated files
+uploads/
+
+# Node (if frontend exists)
+node_modules/
+dist/
+
+# OS files
+.DS_Store
+
+# Database
+*.sqlite3
+
+# Dataset / large files
+ml/dataset/
+*.wav
+*.mp3
